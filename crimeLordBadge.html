@@ -1,0 +1,38 @@
+<!-- Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+     for details. All rights reserved. Use of this source code is governed by a
+     BSD-style license that can be found in the LICENSE file.
+-->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Crimelord Name Badge Generator</title>
+    <link rel="stylesheet" href="crimeLordbadge.css">
+  </head>
+  <body>
+    <h1>Crimelord Name Badge Generator</h1>
+    
+    <div class="widgets">
+      <div>
+        <label for='inputName'>Enter your first name</label>
+        <input type='text' id='inputName' maxlength='10' disable>
+      </div>
+      <p>or</p>
+      <div>
+        <button id='generateButton' disable>Gimme a name!</button>
+      </div>
+    </div>
+    <div class="badge">
+      <div class="greeting">
+        Say hello to
+      </div>
+      <div class="name">
+        <span id="badgeName"> </span>
+      </div>
+    </div>
+    <script type="application/dart" src="crimeLordBadge.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
